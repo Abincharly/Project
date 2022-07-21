@@ -1,3 +1,120 @@
 #include <iostream>
 using namespace std;
 int main()
+
+{
+    int input, amount=0, count=0,a=0, b=0, c=0, d=0;
+    cout<<"Max parking limit = 50";
+    cout<<"\nParking fair for 2 wheeler = 10";
+    cout<<"\nParking fair for 3 wheeler = 20";
+    cout<<"\nParking fair for 4 wheeler = 50";
+    cout<<"\nParking fair for 4 wheeler(Heavy) = 100";
+    
+    
+    cout<<"\n\n\tChoose our service";
+    cout<<"\n press 1 for 2 wheeler";
+    cout<<"\n press 2 for 3 wheeler";
+    cout<<"\n press 3 for 4 wheeler";
+    cout<<"\n press 4 for 4 wheeler(Heavy)";
+    cout<<"\n press 5 for total record";
+    cout<<"\n press 6 for deleting record";
+    
+    cin>>input;
+    if(input==1)
+    {
+        if(count<=50)
+        {
+            a++
+            amount=amount+10;
+            count=count+1;
+            cout<<"A new 2 wheeler is parked";
+            cout<<"\nTotal number of vehicle="<<count;
+            cout<<"\nFree space="<<50-(a+b+c+d);
+            
+        }
+        else
+        {
+            cout<<"Sorry, parking is full";
+        }
+    }
+    
+     else if(input==2)
+    {
+        if(count<=50)
+        {
+            b++
+            amount=amount+20;
+            count=count+1;
+            cout<<"A new 3 wheeler is parked";
+            cout<<"\nTotal number of vehicle="<<count;
+            cout<<"\nFree space="<<50-(a+b+c+d);
+            
+        }
+        else
+        {
+            cout<<"Sorry, parking is full";
+        }
+    }
+    
+    
+     else if(input==3)
+    {
+        if(count<=50)
+        {
+            c++
+            amount=amount+50;
+            count=count+1;
+            cout<<"A new 4 wheeler is parked";
+            cout<<"\nTotal number of vehicle="<<count;
+            cout<<"\nFree space="<<50-(a+b+c+d);
+            
+        }
+        else
+        {
+            cout<<"Sorry, parking is full";
+        }
+    }
+    
+    else if(input==4)
+    {
+        if(count<=50)
+        {
+            d++
+            amount=amount+100;
+            count=count+1;
+            cout<<"A new 4 wheeler(Heavy) is parked";
+            cout<<"\nTotal number of vehicle="<<count;
+            cout<<"\nFree space="<<50-(a+b+c+d);
+            
+        }
+        else
+        {
+            cout<<"Sorry, parking is full";
+        }
+    }
+    
+    
+    else if(input==5)
+    {
+       
+            cout<<"Total vehicle parked"<<count;
+            cout<<"\nTotal number of 2 wheeler="<<a;
+            cout<<"\nTotal number of 3 wheeler="<<b;
+            cout<<"\nTotal number of 4 wheeler="<<c;
+            cout<<"\nTotal number of 4 wheeler(Heavy) ="<<d;
+    }
+    
+    else if(input==6)
+    {
+        amount=0;
+        count=0;
+        a=0;
+        b=0;
+        c=0;
+        d=0;
+        cout<<"All records are deleted!";
+        
+    }
+        
+    }
+}
